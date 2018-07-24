@@ -1,4 +1,4 @@
-FROM jenkinsxio/builder-base:0.0.427
+FROM jenkinsxio/builder-base:0.0.428
 
 ENV \
     DMD_PATH=/opt/dlang
