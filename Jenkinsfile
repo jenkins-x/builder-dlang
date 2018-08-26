@@ -25,7 +25,8 @@ pipeline {
             }
             steps {
                 container('jx-base') {
-                    input 'ok'
+                    sh "git config --global credential.helper store"
+                    sh "jx step git credentials"
                     sh "./jx/scripts/release.sh"
                 }
             }
