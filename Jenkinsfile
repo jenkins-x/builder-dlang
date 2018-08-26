@@ -25,6 +25,7 @@ pipeline {
             }
             steps {
                 container('jx-base') {
+                    input 'ok'
                     sh "./jx/scripts/release.sh"
                 }
             }
